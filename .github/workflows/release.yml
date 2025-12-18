@@ -16,10 +16,10 @@ jobs:
         with:
           version: 9
           
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set Node.js 24.x
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 24.x
           cache: 'pnpm'
           
       - name: Install dependencies
@@ -30,15 +30,12 @@ jobs:
         
       - name: Build and Zip
         run: pnpm run zip
-        
-      - name: Debug - List Output
-        run: ls -R .output
           
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
-          path: .output/*.zip
+          path: dist/*.zip
           if-no-files-found: error
 
   release:
