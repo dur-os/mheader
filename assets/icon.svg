@@ -1,0 +1,15 @@
+            <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 极简融合设计：M 的左右支柱同时构成 H 的两边 -->
+                <!-- 路径描述：
+                    M 的形状是由左、中、右三条垂线构成，
+                    我们将 H 的横杠巧妙地连接 M 的两个间隙。
+                -->
+                
+                <!-- H 的横梁与 M 的折角融合 -->
+                <path d="M20 25V75" stroke="blue" stroke-width="10" stroke-linecap="round"/>
+                <path d="M80 25V75" stroke="blue" stroke-width="10" stroke-linecap="round"/>
+                <path d="M20 50H80" stroke="blue" stroke-width="8" stroke-linecap="round"/>
+                
+                <!-- M 的中心折线 (V 字部分) -->
+                <path d="M20 25L50 55L80 25" stroke="blue" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
